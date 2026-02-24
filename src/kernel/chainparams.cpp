@@ -122,9 +122,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].nStartTime = 1764547200; // December 1st, 2025
         consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
         consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].min_activation_height = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].max_activation_height = 965664; // ~September 1st, 2026
         consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].active_duration = 52416; // ~1 year
-        consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].threshold = 1109; // 55% of 2016
+        consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].threshold = 1815; // 90% of 2016
 
         consensus.nMinimumChainWork = uint256{"0000000000000000000000000000000000000000dee8e2a309ad8a9820433c68"};
         consensus.defaultAssumeValid = uint256{"00000000000000000000611fd22f2df7c8fbd0688745c3a6c3bb5109cc2a12cb"}; // 912683
@@ -295,7 +294,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
         consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].min_activation_height = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].active_duration = 52416; // ~1 year
-        consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].threshold = 1109; // 55% of 2016
+        consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].threshold = 1815; // 90% of 2016
 
         consensus.nMinimumChainWork = uint256{"0000000000000000000000000000000000000000000015f5e0c9f13455b0eb17"};
         consensus.defaultAssumeValid = uint256{"00000000000003fc7967410ba2d0a8a8d50daedc318d43e8baf1a9782c236a57"}; // 3974606
@@ -402,7 +401,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
         consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].min_activation_height = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].active_duration = 52416; // ~1 year
-        consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].threshold = 1109; // 55% of 2016
+        consensus.vDeployments[Consensus::DEPLOYMENT_REDUCED_DATA].threshold = 1815; // 90% of 2016
 
         consensus.nMinimumChainWork = uint256{"0000000000000000000000000000000000000000000001d6dce8651b6094e4c1"};
         consensus.defaultAssumeValid = uint256{"0000000000003ed4f08dbdf6f7d6b271a6bcffce25675cb40aa9fa43179a89f3"}; // 72600

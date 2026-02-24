@@ -1494,7 +1494,11 @@ bool MemPoolAccept::PolicyScriptChecks(const ATMPArgs& args, Workspace& ws)
     const CTransaction& tx = *ws.m_ptx;
     TxValidationState& state = ws.m_state;
 
-    const unsigned int scriptVerifyFlags = PolicyScriptVerifyFlags(args.m_ignore_rejects);
+    unsigned int scriptVerifyFlags = PolicyScriptVerifyFlags(args.m_ignore_rejects);
+
+    if (DeploymentActiveAfter(m_active_chainstate.m_chain.Tip(), m_active_chainstate.m_chainman, Consensus::DEPLOYMENT_REDUCED_DATA)) {
+        scriptVerifyFlags |= REDUCED_DATA_MANDATORY_VERIFY_FLAGS;
+    }
 
     // Check input scripts and signatures.
     // This is done last to help prevent CPU exhaustion denial-of-service attacks.
